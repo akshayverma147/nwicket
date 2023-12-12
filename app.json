@@ -1,4 +1,46 @@
 {
-  "name": "nwicket",
-  "displayName": "nwicket"
+  "expo": {
+    "name": "nWicket - BAPS",
+    "slug": "nwicket",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.im.akshayverma0.nwicket",
+      "permissions":["CAMERA","Permissions.CAMERA","Permissions.AUDIO_RECORDING"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b35f707-b9c4-47d7-abfc-4934c801f42a"
+      }
+    },
+    "owner": "im.akshayverma0"
+  }
 }
