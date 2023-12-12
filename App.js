@@ -173,14 +173,14 @@ export default function App() {
             focusable
             ratio='1:1'
             shouldRasterizeIOS
-            faceDetectorSettings={{
-              mode: 1, // or Camera.Constants.FaceDetection.Mode.accurate
-              detectLandmarks: 1, // or Camera.Constants.FaceDetection.Landmarks.all
-              runClassifications: 1, // or Camera.Constants.FaceDetection.Classifications.all,
-              tracking:true
-            }}
-            faceDetectorEnabled={true}
-            onFacesDetected={(e)=>takePicture(e)}
+            // faceDetectorSettings={{
+            //   mode: 1, // or Camera.Constants.FaceDetection.Mode.accurate
+            //   detectLandmarks: 1, // or Camera.Constants.FaceDetection.Landmarks.all
+            //   runClassifications: 1, // or Camera.Constants.FaceDetection.Classifications.all,
+            //   tracking:true
+            // }}
+            // faceDetectorEnabled={true}
+            // onFacesDetected={(e)=>takePicture(e)}
           >
             <View
               style={{
